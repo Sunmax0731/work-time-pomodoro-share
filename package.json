@@ -5,11 +5,13 @@
   "type": "module",
   "description": "作業打刻・Pomodoro共有 closed alpha prototype",
   "scripts": {
-    "test": "node scripts/validate.mjs && node scripts/web-smoke.mjs",
+    "test": "node scripts/validate.mjs && node scripts/web-smoke.mjs && node tools/platform-runtime-gate.mjs && node tools/closed-alpha-guard.mjs",
     "validate": "node scripts/validate.mjs",
     "smoke:web": "node scripts/web-smoke.mjs",
     "serve": "node scripts/serve.mjs",
-    "cli": "node src/cli/index.mjs"
+    "cli": "node src/cli/index.mjs",
+    "platform:gate": "node tools/platform-runtime-gate.mjs",
+    "closed-alpha:guard": "node tools/closed-alpha-guard.mjs"
   },
   "keywords": [
     "IoT",
