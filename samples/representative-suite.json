@@ -1,0 +1,112 @@
+{
+    "product":  "work-time-pomodoro-share",
+    "version":  "0.1.0-alpha.1",
+    "scenarios":  [
+                      {
+                          "id":  "happy-path",
+                          "kind":  "happy-path",
+                          "title":  "作業打刻・Pomodoro共有代表成功",
+                          "input":  {
+                                        "items":  [
+                                                      {
+                                                          "title":  "作業打刻・Pomodoro共有 alpha",
+                                                          "actor":  "alpha-user",
+                                                          "action":  "review",
+                                                          "severity":  "normal",
+                                                          "consent":  true
+                                                      }
+                                                  ]
+                                    },
+                          "expected":  {
+                                           "status":  "pass",
+                                           "passed":  1,
+                                           "warnings":  0,
+                                           "errors":  0
+                                       }
+                      },
+                      {
+                          "id":  "missing-required",
+                          "kind":  "missing-required",
+                          "title":  "必須不足",
+                          "input":  {
+                                        "items":  [
+                                                      {
+                                                          "title":  "",
+                                                          "actor":  "alpha-user",
+                                                          "action":  "",
+                                                          "severity":  "normal"
+                                                      }
+                                                  ]
+                                    },
+                          "expected":  {
+                                           "status":  "fail",
+                                           "passed":  0,
+                                           "warnings":  0,
+                                           "errors":  2
+                                       }
+                      },
+                      {
+                          "id":  "warning",
+                          "kind":  "warning",
+                          "title":  "警告保持",
+                          "input":  {
+                                        "items":  [
+                                                      {
+                                                          "title":  "作業打刻・Pomodoro共有 manual",
+                                                          "actor":  "reviewer",
+                                                          "action":  "manual-check",
+                                                          "severity":  "warning",
+                                                          "warnings":  [
+                                                                           "manual-test-not-run"
+                                                                       ],
+                                                          "consent":  true
+                                                      }
+                                                  ]
+                                    },
+                          "expected":  {
+                                           "status":  "warning",
+                                           "passed":  1,
+                                           "warnings":  1,
+                                           "errors":  0
+                                       }
+                      },
+                      {
+                          "id":  "mixed-batch",
+                          "kind":  "mixed-batch",
+                          "title":  "混在バッチ",
+                          "input":  {
+                                        "items":  [
+                                                      {
+                                                          "title":  "valid",
+                                                          "actor":  "a",
+                                                          "action":  "accept",
+                                                          "severity":  "normal",
+                                                          "consent":  true
+                                                      },
+                                                      {
+                                                          "title":  "warn",
+                                                          "actor":  "b",
+                                                          "action":  "inspect",
+                                                          "severity":  "warning",
+                                                          "warnings":  [
+                                                                           "needs-device-review"
+                                                                       ],
+                                                          "consent":  true
+                                                      },
+                                                      {
+                                                          "title":  "",
+                                                          "actor":  "",
+                                                          "action":  "reject",
+                                                          "severity":  "normal"
+                                                      }
+                                                  ]
+                                    },
+                          "expected":  {
+                                           "status":  "fail",
+                                           "passed":  2,
+                                           "warnings":  1,
+                                           "errors":  1
+                                       }
+                      }
+                  ]
+}

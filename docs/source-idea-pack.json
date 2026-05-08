@@ -1,0 +1,38 @@
+{
+  "product": "work-time-pomodoro-share",
+  "sourceRank": {
+    "rank": 56,
+    "tier": "P3",
+    "score": 53,
+    "domain": "IoT",
+    "ideaNo": 3,
+    "ideaName": "作業打刻・Pomodoro共有",
+    "repositoryName": "work-time-pomodoro-share",
+    "publicTarget": "GitHub Release / 自宅LAN",
+    "priorityReason": "単体価値はあるが、既存作業ログ/日報系との差別化が弱い。"
+  },
+  "initialRepositoryReadme": "not-found-at-start",
+  "exactCreatedIdeaPath": "D:\\AI\\IoT\\created_idea_003_work-time-pomodoro-share",
+  "exactZipPath": "D:\\AI\\IoT\\created_idea_003_work-time-pomodoro-share\\idea_003_work-time-pomodoro-share.zip",
+  "exactCreatedIdeaPathExists": true,
+  "exactZipExists": true,
+  "fallbackSearchUsed": false,
+  "fallbackSearchResults": [],
+  "zipEntriesChecked": [
+    "metadata.json",
+    "START_PROMPT.md",
+    "README.md",
+    "01_REQUIREMENTS.md",
+    "03_DESIGN.md",
+    "04_IMPLEMENTATION_PLAN.md",
+    "05_TEST_PLAN.md",
+    "06_RELEASE_CHECKLIST.md",
+    "02_SPECIFICATION.md"
+  ],
+  "expectedZipEntriesPresent": true,
+  "metadataRepositoryName": "work-time-pomodoro-share",
+  "metadataIdea": "作業打刻・Pomodoro共有",
+  "metadataMatchesRepository": true,
+  "markdownCopyPolicy": "Formal docs are regenerated in normal Japanese from NON_PICKUP row, metadata, and domain docs. ZIP markdown is checked but not copied verbatim.",
+  "mojibakePolicy": "Generated docs are checked by code point based scanner."
+}

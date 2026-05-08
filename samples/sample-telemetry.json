@@ -1,0 +1,22 @@
+{
+  "contentType": "iot-sample-telemetry",
+  "devices": [
+    {
+      "id": "mock-device-001",
+      "name": "作業打刻・Pomodoro共有 mock node",
+      "state": "online",
+      "risk": "low"
+    },
+    {
+      "id": "mock-device-002",
+      "name": "manual review boundary",
+      "state": "dry-run",
+      "risk": "medium"
+    }
+  ],
+  "safety": {
+    "lanOnly": true,
+    "destructiveActions": "blocked-by-default",
+    "recoveryRunbook": "docs/manual-test.md"
+  }
+}

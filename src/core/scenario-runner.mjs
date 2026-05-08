@@ -1,0 +1,3 @@
+import { validateItem } from '../validators/scenario-validator.mjs';
+export function runScenario(s) { const details=(s.input?.items??[]).map(validateItem); const errors=details.reduce((a,d)=>a+d.errors.length,0); const warnings=details.reduce((a,d)=>a+d.warnings.length,0); const passed=details.filter(d=>!d.errors.length).length; const status=errors?'fail':warnings?'warning':'pass'; return {id:s.id,kind:s.kind,status,passed,warnings,errors,details}; }
+export function runSuite(suite) { const scenarios=suite.scenarios.map(runScenario); return {product:suite.product,version:suite.version,status:scenarios.some(s=>s.status==='fail')?'failures-covered':'pass',scenarios}; }

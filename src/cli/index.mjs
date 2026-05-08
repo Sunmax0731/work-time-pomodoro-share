@@ -1,0 +1,1 @@
+import fs from 'node:fs';import { runSuite } from '../core/scenario-runner.mjs';import { buildReport } from '../report/buildReport.mjs';import { productProfile } from '../core/product-profile.mjs';const suite=JSON.parse(fs.readFileSync(process.argv[2]??'samples/representative-suite.json','utf8'));console.log(JSON.stringify(buildReport(productProfile,runSuite(suite)),null,2));

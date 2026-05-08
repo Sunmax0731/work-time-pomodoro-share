@@ -1,0 +1,18 @@
+{
+  "product": "work-time-pomodoro-share",
+  "version": "0.1.0-alpha.1",
+  "requiredScenarioStatuses": {
+    "happy-path": "pass",
+    "missing-required": "fail",
+    "warning": "warning",
+    "mixed-batch": "fail"
+  },
+  "requiredDocs": 28,
+  "requiredReleaseAssets": [
+    "work-time-pomodoro-share-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "manualTestStatus": "not-run",
+  "stableEvidencePolicy": "Tracked evidence contains no timestamps, random values, local absolute paths, or zip byte sizes."
+}
