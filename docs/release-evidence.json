@@ -1,59 +1,66 @@
 {
   "product": "work-time-pomodoro-share",
-  "githubRepo": "https://github.com/Sunmax0731/work-time-pomodoro-share",
-  "tag": "v0.1.0-alpha.1",
+  "repository": "Sunmax0731/work-time-pomodoro-share",
+  "githubUrl": "https://github.com/Sunmax0731/work-time-pomodoro-share",
   "releaseUrl": "https://github.com/Sunmax0731/work-time-pomodoro-share/releases/tag/v0.1.0-alpha.1",
-  "prereleaseVerified": true,
-  "latestVerification": "verified-not-latest",
-  "assets": [
-    "work-time-pomodoro-share-docs.zip",
-    "manual-test.md",
-    "strict-manual-test-addendum.md"
-  ],
+  "tag": "v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
+  },
   "assetCount": 3,
-  "manualTestStatus": "not-run",
-  "validation": {
-    "npmTest": "passed",
-    "webSmoke": "passed"
-  },
-  "gitChecks": {
-    "mainOriginClean": true,
-    "aheadBehind": "0 0",
-    "localCodexBranches": [],
-    "remoteCodexBranches": []
-  },
-  "releaseSequence": "release-created-api-verified-evidence-updated-docs-zip-regenerated-tag-pushed-assets-reuploaded",
-  "apiChecks": {
-    "tagName": "v0.1.0-alpha.1",
-    "prerelease": true,
-    "latestIsThisRelease": false,
-    "latestStatus": "latest-api-not-this-release",
-    "assetCount": 3,
-    "assetNames": [
+  "assets": {
+    "required": [
+      "dist/work-time-pomodoro-share-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
       "manual-test.md",
       "strict-manual-test-addendum.md",
       "work-time-pomodoro-share-docs.zip"
-    ]
+    ],
+    "actualCount": 3,
+    "allRequiredPresent": true
   },
-  "repository": "Sunmax0731/work-time-pomodoro-share",
-  "githubUrl": "https://github.com/Sunmax0731/work-time-pomodoro-share",
-  "prerelease": true,
-  "latest": false,
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "iot-simulator-mock",
-  "manualTest": "not-run-by-codex",
   "qcdsEvaluation": {
     "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
+    "Cost": "A+",
+    "Delivery": "A+",
+    "Satisfaction": "S-"
   },
-  "github": {
-    "repo": "Sunmax0731/work-time-pomodoro-share",
-    "url": "https://github.com/Sunmax0731/work-time-pomodoro-share",
-    "releaseUrl": "https://github.com/Sunmax0731/work-time-pomodoro-share/releases/tag/v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false
+  "platformRuntimeGate": {
+    "product": "work-time-pomodoro-share",
+    "platformType": "iot-simulator-mock",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "matchedPatterns": [
+      "simulator",
+      "mock",
+      "telemetry",
+      "device-adapter",
+      "host-adapter"
+    ]
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
+  "manualTest": "not-run-by-codex",
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
