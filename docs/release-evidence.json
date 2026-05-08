@@ -1,26 +1,42 @@
 {
-  "product": "work-time-pomodoro-share",
-  "githubRepo": "https://github.com/Sunmax0731/work-time-pomodoro-share",
-  "tag": "v0.1.0-alpha.1",
-  "releaseUrl": null,
-  "prereleaseVerified": false,
-  "latestVerification": "pending-until-release-api-check",
-  "assets": [
-    "work-time-pomodoro-share-docs.zip",
-    "manual-test.md",
-    "strict-manual-test-addendum.md"
-  ],
-  "assetCount": 0,
-  "manualTestStatus": "not-run",
-  "validation": {
-    "npmTest": "pending",
-    "webSmoke": "pending"
-  },
-  "gitChecks": {
-    "mainOriginClean": "pending",
-    "aheadBehind": "pending",
-    "localCodexBranches": "pending",
-    "remoteCodexBranches": "pending"
-  },
-  "releaseSequence": "release-not-created-yet"
+    "product":  "work-time-pomodoro-share",
+    "githubRepo":  "https://github.com/Sunmax0731/work-time-pomodoro-share",
+    "tag":  "v0.1.0-alpha.1",
+    "releaseUrl":  "https://github.com/Sunmax0731/work-time-pomodoro-share/releases/tag/v0.1.0-alpha.1",
+    "prereleaseVerified":  true,
+    "latestVerification":  "verified-not-latest",
+    "assets":  [
+                   "work-time-pomodoro-share-docs.zip",
+                   "manual-test.md",
+                   "strict-manual-test-addendum.md"
+               ],
+    "assetCount":  3,
+    "manualTestStatus":  "not-run",
+    "validation":  {
+                       "npmTest":  "passed",
+                       "webSmoke":  "passed"
+                   },
+    "gitChecks":  {
+                      "mainOriginClean":  true,
+                      "aheadBehind":  "0 0",
+                      "localCodexBranches":  [
+
+                                             ],
+                      "remoteCodexBranches":  [
+
+                                              ]
+                  },
+    "releaseSequence":  "release-created-api-verified-evidence-updated-docs-zip-regenerated-tag-pushed-assets-reuploaded",
+    "apiChecks":  {
+                      "tagName":  "v0.1.0-alpha.1",
+                      "prerelease":  true,
+                      "latestIsThisRelease":  false,
+                      "latestStatus":  "latest-api-not-this-release",
+                      "assetCount":  3,
+                      "assetNames":  [
+                                         "manual-test.md",
+                                         "strict-manual-test-addendum.md",
+                                         "work-time-pomodoro-share-docs.zip"
+                                     ]
+                  }
 }
